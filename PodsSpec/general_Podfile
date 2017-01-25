@@ -1,0 +1,26 @@
+platform :ios, '8.1'
+
+def vendorPods
+    pod 'AFNetworking', '~> 3.1.0'
+#    pod 'ORStackView'
+#    pod 'SwiftyJSON'
+
+ pod 'MBProgressHUD', :path=>'../MBHUD/'
+ pod 'FirebaseInstanceID', :path=>'../Firebase/'
+
+    pod 'Google-Mobile-Ads-SDK'
+    pod 'Firebase/Core'
+    pod 'Firebase/AdMob'
+
+
+#    pod 'Firebase'
+#    pod 'FirebaseCore'
+#    pod 'FirebaseAdMob'
+#    pod 'FirebaseInstanceID'
+end
+
+project 'MyXCodeProject'
+use_frameworks!
+target 'MyProjectTarget' do
+    vendorPods
+end
